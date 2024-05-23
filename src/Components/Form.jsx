@@ -32,9 +32,9 @@ export const Form = () => {
       <form onSubmit={eventHandler}>
         <input onChange={handleName} type="text" placeholder="ingresar nombre" value={name} />
         <input onChange={handleColor}  type="text" placeholder="ingresa tu color favorito" value={colores} />
-        <button>Enviar</button>
+        <button style={{backgroundColor:"blue", color: "white"}}>Enviar</button>
       </form>
-      {error && <p>Por favor, chequee si la informacion es correcta</p>}
+      {error && <p style={{color:"red"}}>Por favor, chequee si la informacion es correcta</p>}
       {show && <Card nombre={name} color={colores}/>}
 
     </div>
